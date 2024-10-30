@@ -265,7 +265,8 @@
    <version ClassVersion="10" checksum="2608785459"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="17">
+  <class name="caf::SRTrueInteraction" ClassVersion="18">
+   <version ClassVersion="18" checksum="1621941489"/>
    <version ClassVersion="17" checksum="1565545093"/>
    <version ClassVersion="16" checksum="358248003"/>
    <version ClassVersion="15" checksum="880834593"/>
@@ -275,6 +276,11 @@
    <version ClassVersion="11" checksum="1216771862"/>
    <version ClassVersion="10" checksum="1298199261"/>
   </class>
+
+  <class name="caf::SRMultiverse" ClassVersion="10">
+   <version ClassVersion="10" checksum="1609299342"/>
+  </class>
+  <class name="std::vector<caf::SRMultiverse>" />
 
   <class name="caf::TrueParticleID" ClassVersion="10">
    <version ClassVersion="10" checksum="2662412328"/>

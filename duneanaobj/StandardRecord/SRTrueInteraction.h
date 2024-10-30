@@ -11,6 +11,7 @@
 #include "duneanaobj/StandardRecord/SREnums.h"
 #include "duneanaobj/StandardRecord/SRTrueParticle.h"
 #include "duneanaobj/StandardRecord/SRVector3D.h"
+#include "duneanaobj/StandardRecord/SRMultiverse.h"
 
 // // This is pretty ugly. The proper fix is to get a new version of castxml that
 // // is built with at least clang v9.
@@ -114,6 +115,13 @@ namespace caf
        std::vector<SRTrueParticle> sec;              ///< Secondary particles.  Note that not *all* secondaries are kept, only those used in the reco branches
 
        float                       xsec_cvwgt = NaN; ///<  Central value weight for cross section model
+
+       /// \brief Systematic weights
+       ///
+       /// The first index is the parameter set, the second the universe. The
+       /// parameter sets are those defined in the globalTree, with matching
+       /// indices.
+       std::vector<SRMultiverse> wgt;
 
    };
 
